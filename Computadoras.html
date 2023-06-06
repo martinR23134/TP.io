@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos2</title>
+    <link rel="stylesheet" href="css/E-commerce-Computadoras.CSS">
+    <script src="https://kit.fontawesome.com/0cd4d38be2.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+</head>
+
+<body>
+   
+    
+  <!-- menu barra -->
+
+
+  
+    <nav class="navbar">
+        <div class="navegacion">
+            <div class="open-menu" id="open">
+                <span class="open-close" id="close"><i class="fa-solid fa-bars"></i></span>
+            </div>
+
+           
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/logo.png" alt="" class="logo">
+                </a>
+            </div>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+                <button class="boton-buscador"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <ul class="login">
+                <li>
+                    <a  href="">
+                       <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                    <span>Tiendas</span>
+                </li>
+                <li><button class="boton-blanco">Ingresar</button></li>
+                <li><button class="boton-negro">Registrarse</button></li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <span>Carrito</span>
+                </li>
+            </ul>
+        </div>
+        </nav>
+     
+        
+        <div id="side-menu" class="menu-slide">
+            <a href="" class="btn-close" onclick="CloseSlideMenu()"></a>
+            <a href="">Productos</a>
+            <a href="">Productos</a>
+            <a href="">Productos</a>
+            <a href="">Productos</a>
+        </div>
+
+<script>
+
+    function OpenSlideMenu(){
+        document.getElementById('side-menu').style.width ='250px';
+        document.getElementById('main').style.marginleft ='250px';
+    }
+
+    function CloseSlideMenu(){
+        document.getElementById('side-menu').style.width ='0';
+        document.getElementById('main').style.marginleft ='0';
+    }
+    
+</script> 
+
+
+
+<nav class="botones-abajo">
+    
+    <div class="abajo">
+        <a href=""><button class="boton-negro">Ofertas</button></a>
+        <a href=""><button class="boton-negro">Vender</button></a>
+        <a href=""><button class="boton-negro">Mercado</button></a>
+        <a href=""><button class="boton-negro">Contacto</button></a>
+        <a href=""><button class="boton-negro">Ayuda</button></a>
+    </div>
+
+
+</nav>
+
+
+    
+<section>
+
+    <div class="container-title">Notebook.</div>
+
+</section>
+
+    
+    
+    <main>
+
+        <div class="container-img">
+            
+            <img src="imagenes/D_NQ_NP_787180-MLA54518190876_032023-O.jpg" alt="Imagen producto">
+        </div>
+        <div class="container-info-producto">
+            <div class="container-price">
+                <span>$235,99</span>
+                <i class="fa-solid fa-tag"></i>
+            </div>
+            <div class="container-detain-productos">
+                <div class="foem-grup">
+                    <label for="colour">Color</label>
+                    <select name="colour" id="colour">
+                        <option disabled selected value=""> Notebook</option>
+                        <option value="Verde">Azul</option>
+                        <option value="Marron">Blanca</option>
+                        <option value="Roja">Roja</option>
+                        <option value="Blanca">Gris</option>
+                    </select>
+                </div>
+                <button class="btn-clean">Limpiar</button>
+            </div>
+
+            <div class="container-add-cart">
+
+                <div class="container-quantity">
+
+                    <input type="number" 
+                    placeholder="1" 
+                    value="1" 
+                    min="1" 
+                    class="input-quantity"
+                    />
+
+                    <div class="btn-increment-decrement">
+                        <i class="fa-solid fa-chevron-up" id="increment"></i>
+                        <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                    </div>
+                </div>
+                <button class="btn-add-to-cart">
+                    <i class="fa-solid fa-plus"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <div class="container-description">
+
+                <div class="title-description">
+
+                    <h4>Descripción</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-description ">
+
+                    <h3>Notebook Lenovo Ideapad 1i Intel I3 1215u 4gb Ram.</h3>
+                    <br>
+
+                        <p>
+                            La notebook LENOVO 82QC003VUS es una solución tanto para trabajar y 
+                            estudiar como para entretenerte. Al ser portátil, el escritorio dejará de ser 
+                            tu único espacio de uso para abrirte las puertas a otros ambientes ya sea en tu casa 
+                            o en la oficina.
+                            <br>
+                            <br>
+                            Eficiencia a tu alcance <br>
+                            Su procesador Intel Core i3 de 12.ª generación, está pensado para aquellas 
+                            personas generadoras y consumidoras de contenidos. Con esta unidad central, la
+                             máquina llevará a cabo varios procesos de forma simultánea, desde edición de videos hasta retoques
+                             fotográficos con programas profesionales.
+                    </p>
+                </div>
+            </div>
+            <div class="container-addictional-information">
+                <div class="title-additional-information">
+
+                    <h4>Información adicional</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-addictional-information " >
+                    <p> -Ofrecemos entrega inmediata en nuestro depósito en Paternal. <br>
+                        -Mercado Envíos, y Mercado Envíos Flex. <br>
+                        -Entrega Same Day en CABA y GBA comprando antes de las 13hs.
+                    </p>
+                </div>
+            </div>
+            <div class="container-reviews">
+                <div class="title-reviews">
+
+                    <h4>Reseñas</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-reviews hidden">
+                    <p> ----------------
+                    </p>
+                </div>
+            </div>
+            <div class="container-social">
+                <span>Compartir</span>
+                <div class="container-buttons-social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="container-related-products">
+        <h2>Productos Relacionados</h2>
+        <div class="card-list-products">
+            <div class="card">
+                <div class="card-img">
+                    <img src="imagenes/D_NQ_NP_982323-MLA51606812711_092022-O.jpg" alt="Producto-1">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>
+                            Notebook HP 15-ef2514la plata 15.6", AMD Ryzen 7 5700U 8GB</h3>
+                        
+                        <p class="category">
+                            Tecnologia
+                        </p>
+                    </div>
+                    <div class="price">$125,99 <i class="fa-solid fa-tag"></i></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="imagenes/D_NQ_NP_891677-MLA54927903010_042023-O.jpg" alt="Producto-2">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Notebook Lenovo Ideapad Core I3-1215u 8gb 256gb</h3>
+                        
+                        <p class="category">
+                            Tecnologia
+                        </p>
+                    </div>
+                    <div class="price">$157,99 <i class="fa-solid fa-tag"></i></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="imagenes/D_NQ_NP_745797-MLA69340654813_052023-O.jpg" alt="Producto-3">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>
+                            Notebook Lenovo IdeaPad 15ITL6 arctic gray 15.6", Intel Core i7</h3>
+                        
+                        <p class="category">
+                            Tecnologia
+                        </p>
+                    </div>
+                    <div class="price">$176,99 <i class="fa-solid fa-tag"></i></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="imagenes/D_NQ_NP_916089-MLA52855783526_122022-V.jpg" alt="Producto-4">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>
+                           
+                            Notebook Lenovo V-Series V15-G2-ITL iron gray 15.6"</h3>
+                       
+                        <p class="category">
+                            Tecnologia
+                        </p>
+                    </div>
+                    <div class="price">$213,99 <i class="fa-solid fa-tag"></i></div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="footer">
+        <div class="social-bar">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span></span>
+    </section>
+
+    <script src="script/E-commerce-Computadoras.JS"></script>
+   
+</body>
+</html>

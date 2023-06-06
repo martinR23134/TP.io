@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos2</title>
+    <link rel="stylesheet" href="css/E-commerce-Cuidado-Personal.CSS">
+    <script src="https://kit.fontawesome.com/0cd4d38be2.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+</head>
+
+<body>
+   
+    
+  <!-- menu barra -->
+
+
+  
+    <nav class="navbar">
+        <div class="navegacion">
+            <div class="open-menu" id="open">
+                <span class="open-close" id="close"><i class="fa-solid fa-bars"></i></span>
+            </div>
+
+           
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/logo.png" alt="" class="logo">
+                </a>
+            </div>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+                <button class="boton-buscador"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <ul class="login">
+                <li>
+                    <a  href="">
+                       <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                    <span>Tiendas</span>
+                </li>
+                <li><button class="boton-blanco">Ingresar</button></li>
+                <li><button class="boton-negro">Registrarse</button></li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <span>Carrito</span>
+                </li>
+            </ul>
+        </div>
+        </nav>
+     
+        
+        <div id="side-menu" class="menu-slide">
+            <a href="" class="btn-close" onclick="CloseSlideMenu()"></a>
+            <a href="">Productos</a>
+            <a href="">Productos</a>
+            <a href="">Productos</a>
+            <a href="">Productos</a>
+        </div>
+
+<script>
+
+    function OpenSlideMenu(){
+        document.getElementById('side-menu').style.width ='250px';
+        document.getElementById('main').style.marginleft ='250px';
+    }
+
+    function CloseSlideMenu(){
+        document.getElementById('side-menu').style.width ='0';
+        document.getElementById('main').style.marginleft ='0';
+    }
+    
+</script> 
+
+
+
+<nav class="botones-abajo">
+    
+    <div class="abajo">
+        <a href=""><button class="boton-negro">Ofertas</button></a>
+        <a href=""><button class="boton-negro">Vender</button></a>
+        <a href=""><button class="boton-negro">Mercado</button></a>
+        <a href=""><button class="boton-negro">Contacto</button></a>
+        <a href=""><button class="boton-negro">Ayuda</button></a>
+    </div>
+
+
+</nav>
+
+
+    
+<section>
+
+    <div class="container-title">Perfumes.</div>
+
+</section>
+
+    
+    
+    <main>
+
+        <div class="container-img">
+            
+            <img src="imagenes/D_NQ_NP_748501-MLA47574177150_092021-O.jpg" alt="Imagen producto">
+        </div>
+        <div class="container-info-producto">
+            <div class="container-price">
+                <span>$55,99</span>
+                <i class="fa-solid fa-tag"></i>
+            </div>
+            <div class="container-detain-productos">
+                <div class="foem-grup">
+                    <label for="colour">Olor</label>
+                    <select name="colour" id="colour">
+                        <option disabled selected value=""> Perfume</option>
+                        <option value="Verde">Fougère</option>
+                        <option value="Marron">Cítrico</option>
+                        <option value="Roja">Amaderado</option>
+                        
+                    </select>
+                </div>
+                <button class="btn-clean">Limpiar</button>
+            </div>
+
+            <div class="container-add-cart">
+
+                <div class="container-quantity">
+
+                    <input type="number" 
+                    placeholder="1" 
+                    value="1" 
+                    min="1" 
+                    class="input-quantity"
+                    />
+
+                    <div class="btn-increment-decrement">
+                        <i class="fa-solid fa-chevron-up" id="increment"></i>
+                        <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                    </div>
+                </div>
+                <button class="btn-add-to-cart">
+                    <i class="fa-solid fa-plus"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <div class="container-description">
+
+                <div class="title-description">
+
+                    <h4>Descripción</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-description ">
+
+                    <h3>
+                       
+                        Antonio Banderas King of Seduction Absolute EDT 100 ml.</h3>
+                    <br>
+
+                        <p>
+                            La fragancia King of Seduction eau de toilette ofrece la frescura perfecta para épocas de calor. Al caracterizarse por sus aromas ligeros podés usar la cantidad que quieras sin miedo a excederte.
+                    </p>
+                </div>
+            </div>
+            <div class="container-addictional-information">
+                <div class="title-additional-information">
+
+                    <h4>Información adicional</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-addictional-information " >
+                    <p> -Ofrecemos entrega inmediata en nuestro depósito en Paternal. <br>
+                        -Mercado Envíos, y Mercado Envíos Flex. <br>
+                        -Entrega Same Day en CABA y GBA comprando antes de las 13hs.
+                    </p>
+                </div>
+            </div>
+            <div class="container-reviews">
+                <div class="title-reviews">
+
+                    <h4>Reseñas</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-reviews hidden">
+                    <p> ----------------
+                    </p>
+                </div>
+            </div>
+            <div class="container-social">
+                <span>Compartir</span>
+                <div class="container-buttons-social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="container-related-products">
+        <h2>Productos Relacionados</h2>
+        <div class="card-list-products">
+            <div class="card">
+                <div class="card-img">
+                    <img src="imagenes/D_NQ_NP_978081-MLA52054368743_102022-O.jpg" alt="Producto-1">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Perfume United Dreams Live Free</h3>
+                        
+                        <p class="category">
+                            Cuidado Personal
+                        </p>
+                    </div>
+                    <div class="price">$35,99 <i class="fa-solid fa-tag"></i></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="imagenes/D_NQ_NP_827652-MLA44749361865_012021-O.jpg" alt="Producto-2">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>
+                            
+                            Nautica Voyage EDT 100 ml para hombre</h3>
+                        
+                        <p class="category">
+                            Cuidado Personal
+                        </p>
+                    </div>
+                    <div class="price">$47,99 <i class="fa-solid fa-tag"></i></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="imagenes/D_NQ_NP_751648-MLA49184667080_022022-O.jpg" alt="Producto-3">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Mary Stuart Loción X 110ml</h3>
+                        
+                        <p class="category">
+                            Cuidado Personal
+                        </p>
+                    </div>
+                    <div class="price">$66,99 <i class="fa-solid fa-tag"></i></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="imagenes/D_NQ_NP_956933-MLA54339865963_032023-O.jpg" alt="Producto-4">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>
+                            Perfume Adolfo Dominguez Para Hombre</h3>
+                       
+                        <p class="category">
+                            Cuidado Personal
+                        </p>
+                    </div>
+                    <div class="price">$83,99 <i class="fa-solid fa-tag"></i></div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="footer">
+        <div class="social-bar">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span></span>
+    </section>
+
+    <script src="script/E-commerce-Cuidado-Personal.JS"></script>
+   
+</body>
+</html>
