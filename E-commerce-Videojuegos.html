@@ -15,66 +15,160 @@
 <body>
    
     
-  <!-- menu barra -->
+  <!-- formulario de contacto -->
 
+  <div class="form_container" id="miElemento">
+    <i id="miBoton" class="fa-solid fa-circle-xmark closeBtn"></i>
+    <div class="form logo_form">
+        <form action="#">
+            <h2>Ingresar</h2>
 
-  
-    <nav class="navbar">
-        <div class="navegacion">
-            <div class="open-menu" id="open">
-                <span class="open-close" id="close"><i class="fa-solid fa-bars"></i></span>
+            <div class="input_box">
+                <input type="gmail" placeholder="Gamail">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="input_box">
+                <input type="password" placeholder="Contraseña">
+                <i class="fa-solid fa-lock"></i>
             </div>
 
-           
-            <div class="logo">
-                <a href="index.html">
-                    <img src="imagenes/logo.png" alt="" class="logo">
-                </a>
+
+            <button class="button">Entrar</button>
+
+          
+        </form>
+
+    </div>
+
+</div> 
+
+<!-- formulario de contacto 2 -->
+
+<div class="form_container" id="miElemento2">
+    <i id="miElemento3" class="fa-solid fa-circle-xmark closeBtn"></i>
+    <div class="form logo_form">
+        <form action="#">
+            <h2>Registro</h2>
+
+            <div class="input_box">
+                <input type="name" placeholder="Nombre y apellido">
+                <i class="fa-solid fa-user"></i>
             </div>
-            <div class="buscador">
-                <input type="text" placeholder="Buscar...">
-                <button class="boton-buscador"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            <div class="input_box">
+                <input type="gmail" placeholder="Email">
+                <i class="fa-regular fa-envelope"></i>
             </div>
-            <ul class="login">
-                <li>
-                    <a  href="">
-                       <i class="fa-solid fa-location-dot"></i>
-                    </a>
-                    <span>Tiendas</span>
-                </li>
-                <li><button class="boton-blanco">Ingresar</button></li>
-                <li><button class="boton-negro">Registrarse</button></li>
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                    <span>Carrito</span>
-                </li>
-            </ul>
-        </div>
-        </nav>
-     
+            <div class="input_box">
+                <input type="password" placeholder="Contraseña">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input_box">
+                <input type="password" placeholder="Repita la contraseña">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+
+            <button class="button">Registrarse</button>
+
+          
+        </form>
+
+    </div>
+
+</div> 
+
+<!-- menu hamburguesa  -->
+
+
+    <div class="barra">
+        <h2>Menu</h2>
         
-        <div id="side-menu" class="menu-slide">
-            <a href="" class="btn-close"  onclick="CloseSlideMenu()"></a>
-            <a href="">Ingresar</a>
-            <a href="">Registrarse</a>
-            <a href="">Tiendas</a>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i><span>Carrito</span></a>
-        </div>
+        <ul>
+            <li><a href="E-commerce-Electronico.HTML">celulares</a></li>
+            <li><a href="E-commerce-Indumentaria.HTML">Ropa</a></li>
+            <li><a href="E-commerce-Videojuegos.html">Entretenimiento</a></li>
+            <li><a href="E-commerce-Hogar.html">Decoración</a></li>
+        </ul>
+       
+    </div> 
 
+
+
+
+<!-- menu barra -->
+
+
+<nav class="navbar">
+    <div class="navegacion">
+        <div class="open-menu" id="open">
+            <span class="open-close" id="close"><i class="fa-solid fa-bars"></i></span>
+        </div>
+       
+        <div class="logo">
+            
+                <img src="imagenes/logo.png" alt="" class="logo">
+           
+        </div>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar...">
+            <button class="boton-buscador"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <ul class="login">
+            <li>
+                <a  href="https://www.google.com/maps/place/Go!+Digital+Ecommerce/@-34.5626228,-58.7582731,10.25z/data=!4m10!1m2!2m1!1secommerce+buenos+aires!3m6!1s0x95bcb59a1e2f82f9:0x88927581ed534385!8m2!3d-34.5896201!4d-58.425941!15sChZlY29tbWVyY2UgYnVlbm9zIGFpcmVzkgESZV9jb21tZXJjZV9zZXJ2aWNl4AEA!16s%2Fg%2F11ptnh89gv?entry=ttu">
+                   <i class="fa-solid fa-location-dot"></i>
+                   <span>Tiendas</span>
+                </a>
+              
+            </li>
+            <li><button class="boton-blanco" id="form-open">Ingresar</button></li>
+            <li><button class="boton-negro" id="miBoton2">Registrarse</button></li>
+            <li>
+                <a href="formulariodepago.html?">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Carrito</span>
+                </a>
+                
+            </li>
+        </ul>
+    </div>
+</nav>
+ 
+    
+    <div id="side-menu" class="menu-slide">
+        <a href="" class="btn-close" onclick="CloseSlideMenu()"></a>
+        <a href="">Productos</a>
+        <a href="">Productos</a>
+        <a href="">Productos</a>
+        <a href="">Productos</a>
+    </div>
+
+<script>
+
+function OpenSlideMenu(){
+    document.getElementById('side-menu').style.width ='250px';
+    document.getElementById('main').style.marginleft ='250px';
+}
+
+function CloseSlideMenu(){
+    document.getElementById('side-menu').style.width ='0';
+    document.getElementById('main').style.marginleft ='0';
+}
+
+</script> 
 
 
 
 <nav class="botones-abajo">
-    
-    <div class="abajo">
-        <a href=""><button class="boton-negro">Ofertas</button></a>
-        <a href=""><button class="boton-negro">Vender</button></a>
-        <a href=""><button class="boton-negro">Mercado</button></a>
-        <a href=""><button class="boton-negro">Contacto</button></a>
-        <a href=""><button class="boton-negro">Ayuda</button></a>
-    </div>
+
+<div class="abajo">
+    <a href="E-commerce-Ofertas.HTML"><button class="boton-negro">Ofertas</button></a>
+    <a href="E-commerce-Deporte.HTML"><button class="boton-negro">Deporte</button></a>
+    <a href="E-commerce-Mascotas.HTML"><button class="boton-negro">Mascotas</button></a>
+    <a href="E-commerce-Juguetes.HTML"><button class="boton-negro">Juguetes</button></a>
+    <a href="Computadoras.html"><button class="boton-negro">Computadoras</button></a>
+</div>
 
 
 </nav>

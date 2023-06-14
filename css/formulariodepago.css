@@ -1,0 +1,106 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: rgb(130, 176, 202);
+}
+
+
+/* formulario de pago */
+
+.pago{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height: 100vh;
+    background: rgb(130, 176, 202);
+  }
+  
+  .pago form{
+    padding:20px;
+    width:700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    border: 2px solid #162b4e; 
+    border-radius: 12px;
+  }
+  
+  .pago form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  
+  .pago form .row .col{
+    flex:1 1 250px;
+  }
+  
+  .pago form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .pago form .row .col .Box{
+    margin:15px 0;
+    
+  }
+  
+  .pago form .row .col .Box span{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .pago form .row .col .Box input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    border-radius: 12px;
+  }
+  
+  .pago form .row .col .Box input:focus{
+    border:1px solid #000;
+  }
+  
+  .pago form .row .col .clase2{
+    display: flex;
+    gap:15px;
+  }
+  
+  .pago form .row .col .clase2 .Box{
+    margin-top: 5px;
+  }
+  
+  .pago form .row .col .Box img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  
+  .pago form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: orangered;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  .pago form .submit-btn:hover{
+    background: orangered;
+  }
+
+

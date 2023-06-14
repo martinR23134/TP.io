@@ -107,9 +107,211 @@ input {
 
 }
 
-.navbar li a {
+.navbar li i {
     color: orangered; 
 }
+
+/* formulario de contacto  */
+
+.form_container {
+    display: none; 
+   position: absolute;
+   max-width: 320px;
+   width: 100%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 101;
+   background: #fff;
+   padding: 25px;
+   border-radius: 12px;
+   box-shadow: rgba(0,0,0,0.1);
+   border: 2px solid #162b4e; 
+ padding: 10px;
+ }
+
+ .fa-circle-xmark{
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   color: #0b0217;
+   font-size: 22px;
+   opacity: 0,7;
+   cursor: pointer;
+ }
+
+.form_container h2{
+   font-size: 22px;
+   color: #0b0217;
+   text-align: center;
+}
+
+.input_box {
+   position: relative;
+   margin-top: 30px;
+   width: 100%;
+   height: 40px;
+  
+}
+
+
+
+.input_box input{
+   border-radius: none;
+   width: 230px;
+   border-bottom: 1.5px solid ;
+
+}
+
+.input_box i{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 18px;
+   margin-left: 20px;
+}
+
+.form_container .button{
+    
+   background: orangered;
+   margin-top: 30px;
+   width: 100%;
+   padding: 10px 0;
+   border-radius: 10px;
+} 
+
+
+#btn-menu{
+       display: none;
+   }
+   .container-menu{
+       position: absolute;
+       background: rgba(0,0,0,0.5);
+       width: 100%;
+       height: 100vh;
+       top: 0;left: 0;
+       transition: all 500ms ease;
+       opacity: 0;
+       visibility: hidden;
+   }
+   #btn-menu:checked ~ .container-menu{
+       opacity: 1;
+       visibility: visible;
+   }
+   .cont-menu{
+       width: 100%;
+       max-width: 250px;
+       background: #1c1c1c;
+       height: 100vh;
+       position: relative;
+       transition: all 500ms ease;
+       transform: translateX(-100%);
+   }
+   #btn-menu:checked ~ .container-menu .cont-menu{
+       transform: translateX(0%);
+   }
+   .cont-menu nav{
+       transform: translateY(15%);
+   }
+   .cont-menu nav a{
+       display: block;
+       text-decoration: none;
+       padding: 20px;
+       color: #c7c7c7;
+       border-left: 5px solid transparent;
+       transition: all 400ms ease;
+   }
+   .cont-menu nav a:hover{
+       border-left: 5px solid #c7c7c7;
+       background: #1f1f1f;
+   }
+   .cont-menu label{
+       position: absolute;
+       right: 5px;
+       top: 10px;
+       color: #fff;
+       cursor: pointer;
+       font-size: 18px;
+   }
+
+   /* menu hamburguesa */
+
+
+   .barra {
+       width: 6%;
+       height: 4%;
+       position: fixed;
+       transition: .3s all ;
+       z-index: 200;  
+   }
+   
+   .barra ul{
+       padding:0px;      
+   }
+
+   .barra  li{
+       transition:all .3s;
+       list-style: none; 
+   }
+   
+   .barra a{
+       text-decoration: none;
+       font-weight: normal;
+       transition: .3s all ;
+       font-size: 0px;
+       padding:0px;
+   }
+
+   
+   .barra  h2{
+       text-align: center;
+       color:white;
+       padding:7px;
+       padding-bottom:7px;
+       font-size:0px;   
+   }
+   
+   .barra:hover{
+       width: 55%;
+       height: 100vh;
+       background: #162b4e;
+   }
+
+   .barra:hover h2{
+       padding: 15px;
+       font-size: 35px;
+   }
+
+   .barra:hover a{ 
+       font-size: 15px ;
+       color:white;
+       display: block;
+       padding:20px;
+   }
+   
+   .barra:hover li{
+       border-top: 1px solid #03121b;
+       width: 100%;
+   }
+
+   .barra:hover ul:last-of-type{
+       width: 90%;
+       border-bottom: 1px solid #03121b;
+   }
+   
+   .barra:hover a:hover{ 
+       font-size: 18px;
+       padding: 15px 0px; 
+       background: orangered;  
+   }
+   
+   @media (min-width: 768px){
+       .barra:hover{
+       width: 22%;
+       }
+   }
+
+
 .fa-location-dot{
    
     font-size: 1.3em
